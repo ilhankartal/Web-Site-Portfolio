@@ -1,0 +1,262 @@
+@import url("bio.html") screen and (max-width: 0px);
+
+
+@-ms-viewport{
+    width: device-width;
+}
+@media screen and (min-height: 768px) and (max-width:1024px) {
+  .alt{
+   height:500rem;
+   width: auto;
+  }   
+}
+*{
+    font-family: 'Raleway', sans-serif;
+}
+a{
+    font-style: none;
+    text-decoration: none;
+    color: #000;
+}
+body{
+    background: url(bg.png);
+    background-size: cover;
+}
+nav{
+    position: sticky;
+    width: auto;
+    height: 13%;
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    padding-left: 10vh;
+    padding-right: 2vh;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+
+.btn {
+    font-size: 13px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: black;
+    transition: .5s ease;
+  }
+  
+  .btn:hover {
+    color: #000;
+    transition-delay: .5s;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+  }
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+  .btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #ddd;
+    transition: .4s ease;
+    z-index: -1;
+  }
+
+.container{
+  padding: 4%;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+  .card{
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60.1vh; 
+    height: 70vh;
+    overflow: hidden;
+    background-image:url(bg.png);
+    background-position: center ;
+    border-radius: 15px;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+    text-align: center;
+    -webkit-transition: .1s ease-in-out;
+    transition: .1s ease-in-out;
+  }
+
+  .bgfont{
+    color: aliceblue;
+    position: static;
+
+  }
+
+    .card:hover{
+      margin-top: -1vh;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+    }
+  .banner{
+    height: 25vh;
+    width: 100%;
+    padding-top: 10vh;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+  }
+  .card .banner{
+      background-image: url(banner.JPG);
+    }
+  .avatar{
+    height: 20vh;
+    width: 20vh;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border-radius: 100%;
+  }
+  .card .avatar{
+      background-image: url(ramo.png);
+    }
+
+.listsm{
+  margin-right: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transition: .5s;
+}
+
+.sm{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+}
+.sm:hover{
+  background-color:#ddd;
+  width: 10vh;
+  height: 10vh;
+  transform: rotateZ(15deg);
+  box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07)
+;
+}
+.sm.insta:hover{
+  background: #f09433; 
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.sm.tw:hover{
+  background: #00acee; 
+}
+.sm.lnk:hover{
+  background: #0077b5; 
+}
+.alt{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 45rem;
+  color:#ddd;
+  font-weight: 900;
+  background:#725AC1;
+}
+
+ .container{
+  position: relative;
+  min-height:min-content;
+  height: 90vh;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items:center;
+  text-align: center;
+}
+.telmail{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 20vh ;
+  border-radius: 1vh 1vh 1vh 0;
+  transition: .5s;
+}
+.sm.mail:hover{
+  background-color: #dc2743;
+}
+.sm.ara:hover{
+  background-color:green;
+}
+.ılhan{
+  font-weight: bolder;
+  font-size: xx-large;
+  cursor:pointer;
+
+}
